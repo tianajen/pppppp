@@ -1,0 +1,239 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+
+//ajustage de liens se souvenir de moi & mot de passe ouvlié?
+
+.oublie {
+  background: none !important;
+  position: absolute;
+  margin-top: -12px;
+  right: 17px;
+}
+.oublie:hover{
+  color: dimgray;
+}
+.cent{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+}
+.ele{
+  display: flex;
+  justify-content: center;
+  margin-left: -10px;
+  margin-top: -20px;
+}
+
+.ele li{
+  display: inline;
+}
+.ele li p{
+  color: #919191;
+  width: 120px;
+  height: 20px;
+  padding: 0px;
+  margin-top: 1px;
+}
+
+
+
+
+// fin ajustage de liens se souvenir de moi & mot de passe ouvlié?
+
+//ajustage de devise field with errors
+.field_with_errors {
+  padding: 0 !important;
+  background-color: transparent !important;
+  display: inherit !important;
+  border: 3px solid #e8206b;
+  padding-bottom: 55px !important;
+  height: 61px !important;
+  margin-bottom: 30px !important;
+}
+//fin ajustage de devise field with errors
+
+//ajustage du formulaire ××××××××××××××××××××××××××××××××××××××××××××××;
+#email, #pass{
+  height: 55px;
+  width: 100% !important;
+  border-radius: 0px !important;
+  font-size: 15px;
+  padding: 15px 35px;
+  box-shadow: none !important;
+  border: 1px solid #e0e0e0 !important;
+}
+
+p {
+  font-size: 14px !important;
+  line-height: 18px !important;
+}
+
+input[type=submit]{
+  text-shadow: none !important;
+  height: 50px;
+}
+
+form input[type=submit]:not(.disabled):hover {
+  background-color: #E5E5E5 !important;
+  background-image: none;
+}
+
+
+// fin de l'ajustage du formulaire ××××××××××××××××××××××××××××××××××××××××××××××;
+
+//ajustage du theme ××××××××××××××××××××××××××××××××;
+a{
+  text-decoration: none !important;
+}
+#header {
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.navigation a:hover, .navigation a{
+  background: none;
+  text-decoration: none;
+}
+
+.navigation a:hover, .navigation a.active {
+  color: #ff688b !important;
+}
+
+#first-slider .carousel-control {
+  background: transparent;
+}
+
+.section, .panel {
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+/*//××××××× LOGO ×××××××××××××××××××××××××××××××××××××××××××××××××*/
+
+.lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.lds-grid div {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  animation: lds-grid 1.2s linear infinite;
+}
+.lds-grid div:hover {
+  background: #e8206b;
+}
+.lds-grid div:nth-child(1) {
+  top: 6px;
+  left: 14px;
+  animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+  top: 6px;
+  left: 28px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+  top: 6px;
+  left: 42px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+  top: 20px;
+  left: 10px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+  top: 20px;
+  left: 24px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+  top: 20px;
+  left: 38px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+  top: 33px;
+  left: 6px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+  top: 33px;
+  left: 20px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+  top: 33px;
+  left: 34px;
+  animation-delay: -1.6s;
+}
+
+@keyframes lds-grid {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+#immatric p{
+  color: white;
+  font-size: 22px;
+  margin-left: 60px;
+  margin-top: -10px;
+  font-weight: bolder;
+  font-style: italic;
+  background: none;
+}
+#immatric p a{
+  color: white !important;
+  text-decoration: none;
+  background: none;
+}
+#immatric p a:hover{
+  color: #e8206b !important;
+}
+#immatriculus p a{
+  color: white !important;
+  text-decoration: none;
+  background: none;
+}
+#immatriculus p a:hover{
+  color: #e8206b !important;
+}
+/*//×××××××××××××××××××××××××××××*/
+
+#immatriculus p{
+  color: white;
+  font-size: 22px !important;
+  margin-left: 60px;
+  margin-top: -9px;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.logom{
+  margin-top: 9px;
+  margin-bottom: -43px;
+}
+#header {
+  height: 88px;
+}
+/*//×××××××××××××××××××××××××××××*/
+//fin d'ajustage du theme ××××××××××××××××××××××××

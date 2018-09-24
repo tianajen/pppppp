@@ -1,0 +1,131 @@
+// SASS variable overrides must be declared before loading up Active Admin's styles.
+//
+// To view the variables that Active Admin provides, take a look at
+// `app/assets/stylesheets/active_admin/mixins/_variables.scss` in the
+// Active Admin source.
+//
+// For example, to change the sidebar width:
+// $sidebar-width: 242px;
+
+// Active Admin's got SASS!
+@import "active_admin/mixins";
+@import "active_admin/base";
+
+// Overriding any non-variable SASS must be done after the fact.
+// For example, to change the default status-tag color:
+//
+//   .status_tag { background: #6090DB; }
+
+
+
+.section > h3, .panel > h3{
+    background-color: #ff3e3e;
+    /* background-image: linear-gradient(180deg, #efefef, #dfe1e2); */
+    /* text-shadow: #fff 0 1px 0; */
+    /* border: solid 1px #cdcdcd; */
+    border-color: none !important;
+    border-top-color: none !important;
+    border-right-color: none !important;
+    border-bottom-color: none !important;
+    border-left-color: none !important;
+    color: red;
+}
+/*ajustage du front admin login*/
+body.logged_out h2{
+    background: #111 ;
+    background-image: none;
+    height: 50px;
+}
+#wrapper {
+    width: 100%;
+    height: 100%;
+    background: red;
+    background: url(images/zz.jpg) no-repeat fixed;
+    background-size: cover;
+    position: absolute;
+}
+body.logged_out #content_wrapper #active_admin_content {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    background: #aaa;
+    padding: 13px 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+
+    width: 500px;
+    height: 350px;
+    margin: 0px;
+    padding: 30px;
+}
+
+//les barres××××××××××××××××××××××××××××××××××××××××××××××××××
+form input[type=text], form input[type=password], form input[type=email], form input[type=number], form input[type=url], form input[type=tel], form input[type=date], form input[type=time], form textarea {
+    width: 86% !important;
+    border-radius: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    outline: none;
+
+    height: 20px;
+    font-size: 15px;
+    padding: 15px 35px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    margin-left: 0px;
+    box-shadow: none !important;
+    border: 1px solid #e0e0e0 !important;
+}
+
+a.button, a:link.button, a:visited.button, input[type=submit], input[type=button], button {
+    line-height: 12px;
+    margin-right: 3px;
+    padding: 15px 30px !important;
+    text-decoration: none;
+    background: #e8206b !important;
+    background-color: none !important;
+    background-image: none !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    border: none !important;
+   
+    color: #fff;
+    margin-top: -19px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    -moz-border-radius: 2px !important;
+    -webkit-border-radius: 2px !important;
+    border-radius: 2px !important;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+form fieldset > ol > li.boolean label input {
+    left: -23px !important;
+    bottom: 3px !important;
+    position: absolute;
+}
+form fieldset > ol > li.boolean label {
+    position: absolute;
+    left: 208px;
+    bottom: 28px;
+    width: 78px;
+    margin-left: -20px;
+    padding: 0px;
+}
+#title_bar {
+    background-color: #2d2828;
+    background-image: none;
+    text-shadow: none;
+    border: none;
+    box-shadow: none !important;
+    box-sizing: border-box;
+    position: relative;
+    padding: 10px 30px;
+    z-index: 800;
+    top: 30px;
+}
+/* fin d'ajustage du front admin login*/
